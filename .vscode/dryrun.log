@@ -1,0 +1,8 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/dvirb/b-ball'
+clang++-9 -std=c++2a -Werror -Wsign-conversion -Isources --compile sources/Leauge.cpp -o objects/Leauge.o
+clang++-9 -std=c++2a -Werror -Wsign-conversion -Isources --compile sources/Game.cpp -o objects/Game.o
+clang++-9 -std=c++2a -Werror -Wsign-conversion -Isources --compile sources/Team.cpp -o objects/Team.o
+clang++-9 -std=c++2a -Werror -Wsign-conversion -Isources objects/Leauge.o objects/Game.o objects/Team.o -o test
+make: Leaving directory '/home/dvirb/b-ball'
+ 
